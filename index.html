@@ -12,8 +12,6 @@
             --dark-gold: #6b5523;
             --accent-red: #7c2b2b;
             --border-color: #c9b89a;
-            --tag-bg: #e8dfce;
-            --tag-text: #5a4a3a;
         }
 
         body {
@@ -199,15 +197,14 @@
             margin-bottom: 15px;
         }
 
-        /* ИСПРАВЛЕНИЕ: Теперь гербы не обрезаются */
         .crest-img {
             max-width: 100%;
-            max-height: 250px; /* Чуть увеличил высоту, чтобы было видно детали */
-            object-fit: contain; /* Вписывает картинку целиком, без обрезки */
+            max-height: 250px; 
+            object-fit: contain;
             border-radius: 4px;
             border: 1px solid var(--border-color);
             box-shadow: 2px 2px 10px rgba(0,0,0,0.15);
-            background-color: rgba(255,255,255,0.5); /* Легкий фон для прозрачных картинок */
+            background-color: rgba(255,255,255,0.5);
         }
 
         .house-title {
@@ -226,26 +223,6 @@
             display: block;
         }
 
-        .house-tags {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-bottom: 20px;
-        }
-
-        .tag {
-            background-color: var(--tag-bg);
-            color: var(--tag-text);
-            padding: 4px 12px;
-            border-radius: 15px;
-            font-size: 0.85em;
-            font-family: sans-serif;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border: 1px solid #d1c7b8;
-        }
-
         .house-text {
             text-align: left;
             margin-bottom: 20px;
@@ -253,17 +230,6 @@
 
         .house-text p {
             margin-bottom: 10px;
-        }
-
-        .house-quote {
-            font-style: italic;
-            color: var(--accent-red);
-            font-size: 1.05em;
-            margin-top: 20px;
-            padding: 10px 20px;
-            border-top: 1px solid rgba(200, 180, 150, 0.5);
-            border-bottom: 1px solid rgba(200, 180, 150, 0.5);
-            text-align: center;
         }
 
         .back-to-top {
@@ -315,22 +281,22 @@
             <li><a href="#world-outside">Остальной мир</a></li>
             <li><a href="#cult">Культ Матери</a></li>
             <li><a href="#houses">Детальные досье домов</a></li>
-            <li><a href="#coden">1. Дом Коден</a></li>
-            <li><a href="#blodyn">2. Дом Блодина</a></li>
-            <li><a href="#solad">3. Дом Солад</a></li>
-            <li><a href="#tork">4. Дом Торк</a></li>
-            <li><a href="#gamam">5. Дом Гамам</a></li>
-            <li><a href="#olvyn">6. Дом Олвин</a></li>
-            <li><a href="#dualuk">7. Дом Дуалак</a></li>
-            <li><a href="#tiryll">8. Дом Тайрилл</a></li>
-            <li><a href="#natar">9. Дом Натар</a></li>
-            <li><a href="#crann">10. Дом Крэнн</a></li>
-            <li><a href="#wylio">11. Дом Вайлио</a></li>
-            <li><a href="#allwed">12. Дом Аллвед</a></li>
+            <li><a href="#blodyn">1. Герцоги Блодина</a></li>
+            <li><a href="#solad">2. Герцоги Солада</a></li>
+            <li><a href="#tork">3. Маркизы Торка</a></li>
+            <li><a href="#coden">4. Герцоги Кодена</a></li>
+            <li><a href="#olvyn">5. Герцоги Олвина</a></li>
+            <li><a href="#allwed">6. Маркизы Аллведа</a></li>
+            <li><a href="#gamam">7. Герцоги Гамама</a></li>
+            <li><a href="#dualuk">8. Маркизы Дуалака</a></li>
+            <li><a href="#tiryll">9. Маркизы Тайрила</a></li>
+            <li><a href="#wylio">10. Маркизы Вайлио</a></li>
+            <li><a href="#crann">11. Маркизы Кранна</a></li>
+            <li><a href="#natar">12. Герцоги Натара</a></li>
         </ul>
     </div>
 
-    <!-- КАРТА АНКИСТА (ТАКАЯ ЖЕ, КАК СОСЕДИ) -->
+    <!-- КАРТА АНКИСТА -->
     <div class="map-container">
         <a href="map_ankist.jpg" target="_blank">
             <img src="map_ankist.jpg" class="map-img map-small" alt="Карта Королевства Анкист (нажмите для увеличения)" title="Нажмите, чтобы открыть полную карту">
@@ -391,10 +357,9 @@
     <p>Обычными преступлениями занимаются местные судьи, однако с просьбой о помиловании всегда можно обратиться к герцогу, маркизу и даже королю. Что же касается более неоднозначных дел, то они выносятся на рассмотрение Главного судьи — экспертного знатока законов, возглавляющего Суд Ликры. Он изучает эти дела и предоставляет свои рекомендации совету.</p>
     <div class="back-to-top"><a href="#top">↑ Наверх</a></div>
 
-    <!-- ОСТАЛЬНОЙ МИР (с картой соседей) -->
+    <!-- ОСТАЛЬНОЙ МИР -->
     <h2 id="world-outside">🌍 Остальной мир</h2>
 
-    <!-- УМЕНЬШЕННАЯ КАРТА СОСЕДЕЙ -->
     <div class="map-container">
         <a href="map_world.jpg" target="_blank">
             <img src="map_world.jpg" class="map-img map-small" alt="Карта известных земель (нажмите для увеличения)" title="Нажмите, чтобы открыть полную карту">
@@ -457,273 +422,170 @@
     <h2 id="houses">⚔️ Детальные досье домов</h2>
     <p style="text-align: center; font-style: italic; margin-bottom: 40px;">Позвольте представить вам тех, кто будет решать судьбу Анкиста. Не как сухие карточки, а как живых людей с амбициями, страхами и грехами.</p>
 
-    <!-- КОДЕН -->
-    <div class="house-block" id="coden">
-        <div class="crest-container">
-            <img src="coden.jpg" class="crest-img" alt="Герб Дома Коден">
-        </div>
-        <div class="house-title">Дом Коден</div>
-        <span class="house-motto">«Леса крепнут»</span>
-        <div class="house-tags">
-            <span class="tag">Ленивые</span>
-            <span class="tag">Гостеприимные</span>
-            <span class="tag">Богачи</span>
-        </div>
-        <div class="house-text">
-            <p>Герцоги Коден — прародители королевства. Когда-то их предки сидели на троне, и до сих пор их кровь течёт в жилах королевской семьи. Их земли — житница Анкиста: золотые поля, тучные стада, оживлённые торговые пути. Они богаты так, как могут быть богаты только те, кто никогда не знал голода.</p>
-            <p>Но богатство развращает. Коден славятся гостеприимством и щедростью, но за этим фасадом скрывается лень и декаданс. Они привыкли, что всё даётся легко.</p>
-            <p><strong>В совете:</strong> Коден будут тянуть одеяло на себя, требуя стабильности и богатства. Они — естественные союзники короны. Но их высокомерие может стоить им друзей.</p>
-        </div>
-        <div class="house-quote">
-            «Мы были здесь до того, как Анкист стал Анкистом. Мы — его корни».
-        </div>
-        <div class="back-to-top"><a href="#top">↑ Наверх</a></div>
-    </div>
-
-    <!-- БЛОДИНА -->
+    <!-- 1. БЛОДИНА -->
     <div class="house-block" id="blodyn">
         <div class="crest-container">
             <img src="blodyn.jpg" class="crest-img" alt="Герб Дома Блодина">
         </div>
-        <div class="house-title">Дом Блодина</div>
-        <span class="house-motto">«Гармония — это принятие»</span>
-        <div class="house-tags">
-            <span class="tag">Лояльные</span>
-            <span class="tag">Художники</span>
-            <span class="tag">Учёные</span>
-        </div>
+        <div class="house-title">1. Герцоги Блодина (Blodyn)</div>
+        <span class="house-motto">«Гармония - это принятие»</span>
+        
         <div class="house-text">
-            <p>Герцоги Блодина — поэты и мореплаватели. Их земли лежат на берегах, где ветер пахнет солью и свободой. Здесь грамотность выше, чем в любом другом уголке королевства, а храмы полны людей, ищущих не утешения, а вдохновения.</p>
-            <p>Блодина — дом контрастов. Их воины легендарны, но они ненавидят убивать. Их герцоги часто впадают в депрессию, но именно в этом мраке они находят свет. Они верят, что гармония — это не отсутствие конфликта, а принятие его.</p>
-            <p><strong>В совете:</strong> Блодина будут поддерживать науку, культуру и моральный дух. Они — голос разума и красоты. Но их депрессивность может привести к неожиданным, рискованным решениям.</p>
-        </div>
-        <div class="house-quote">
-            «В самых мрачных моментах рождаются величайшие произведения».
+            <p>Вы довольно гостеприимны и открыты. Ваши люди используют обилие времени и ресурсов очень высокую духовность и повышенный уровень грамотности по сравнению с остальным королевством.</p>
         </div>
         <div class="back-to-top"><a href="#top">↑ Наверх</a></div>
     </div>
 
-    <!-- СОЛАД -->
+    <!-- 2. СОЛАД -->
     <div class="house-block" id="solad">
         <div class="crest-container">
             <img src="solad.jpg" class="crest-img" alt="Герб Дома Солад">
         </div>
-        <div class="house-title">Дом Солад</div>
-        <span class="house-motto">«Всё не то, чем кажется»</span>
-        <div class="house-tags">
-            <span class="tag">Мечтатели</span>
-            <span class="tag">Мореплаватели</span>
-            <span class="tag">Изобретатели</span>
-        </div>
+        <div class="house-title">2. Герцоги Солада (Solad)</div>
+        <span class="house-motto">«Все не то, чем кажется»</span>
+        
         <div class="house-text">
-            <p>Герцоги Солад — мечтатели. Их верфи славятся на весь Ливик, их поэты воспевают звёзды и океаны. Они не столько дворяне, сколько философы, ищущие истину за пределами видимого.</p>
-            <p>Солад — дом прогресса. Они принимают новое, даже если оно кажется безумным. Они верят, что бедность и болезни можно победить знанием. Но их страсть к экспериментам может привести к катастрофе.</p>
-            <p><strong>В совете:</strong> Солад — союзники Блодины в вопросах науки. Но их радикализм может отпугнуть более консервативные дома.</p>
-        </div>
-        <div class="house-quote">
-            «Мы строим корабли, чтобы найти край мира. Но край мира — внутри нас».
+            <p></p>
         </div>
         <div class="back-to-top"><a href="#top">↑ Наверх</a></div>
     </div>
 
-    <!-- ТОРК -->
+    <!-- 3. ТОРК -->
     <div class="house-block" id="tork">
         <div class="crest-container">
             <img src="tork.jpg" class="crest-img" alt="Герб Дома Торк">
         </div>
-        <div class="house-title">Дом Торк</div>
-        <span class="house-motto">«Выдержим любой удар»</span>
-        <div class="house-tags">
-            <span class="tag">Миролюбивые</span>
-            <span class="tag">Воины севера</span>
-        </div>
+        <div class="house-title">3. Маркизы Торка (Tork)</div>
+        <span class="house-motto">«Бей сильнее, мы выдержим»</span>
+        
         <div class="house-text">
-            <p>Маркизы Торк — защитники севера. Их земли — холодные, суровые, окружённые лесами, полными налётчиков. Здесь рождаются воины, чья стойкость вошла в легенды. Но Торк — не агрессоры. Они пацифисты в душе, сражающиеся только для защиты.</p>
-            <p>Их цель — освободить мир от зла. Не через завоевания, а через единство. Они ищут союзников среди других кланов, чтобы вместе противостоять тьме.</p>
-            <p><strong>В совете:</strong> Торк — голос морали. Они будут поддерживать всё, что укрепляет оборону и защищает слабых. Но их идеализм может столкнуться с прагматизмом других домов.</p>
-        </div>
-        <div class="house-quote">
-            «Мы сражаемся не ради славы. Мы сражаемся, чтобы наши дети не знали войны».
+            <p></p>
         </div>
         <div class="back-to-top"><a href="#top">↑ Наверх</a></div>
     </div>
 
-    <!-- ГАМАМ -->
-    <div class="house-block" id="gamam">
+    <!-- 4. КОДЕН -->
+    <div class="house-block" id="coden">
         <div class="crest-container">
-            <img src="gamam.jpg" class="crest-img" alt="Герб Дома Гамам">
+            <img src="coden.jpg" class="crest-img" alt="Герб Дома Коден">
         </div>
-        <div class="house-title">Дом Гамам</div>
-        <span class="house-motto">«Работа — это жизнь»</span>
-        <div class="house-tags">
-            <span class="tag">Предприимчивые</span>
-            <span class="tag">Трудолюбивые</span>
-        </div>
+        <div class="house-title">4. Герцоги Кодена (Coden)</div>
+        <span class="house-motto">«Леса растут крепкими»</span>
+        
         <div class="house-text">
-            <p>Герцоги Гамам — трудяги и ремесленники. Их столица, Золотая Гавань, — это город чистых улиц, богатых рынков и неустанного труда. Их называют «людьми-омарами» за их упорство и способность выживать в любых условиях.</p>
-            <p>Гамам одержимы идеей бессмертия. Не в мистическом смысле — они хотят продлить жизнь через науку, алхимию, знания. Они верят, что труд и разум могут победить саму смерть.</p>
-            <p><strong>В совете:</strong> Гамам будут тянуть к богатству и науке. Они — союзники Кодена в экономике и Блодины в исследованиях. Но их высокомерие и привередливость могут оттолкнуть других.</p>
-        </div>
-        <div class="house-quote">
-            «Жизнь слишком коротка, чтобы тратить её на сон».
+            <p>Находясь между плодородными землями и изобилием моря Кейле, ваш народ редко страдает от голода. Вы гостеприимны и дружелюбны, но склонны к декадентству и безинициативности.</p>
         </div>
         <div class="back-to-top"><a href="#top">↑ Наверх</a></div>
     </div>
 
-    <!-- ОЛВИН -->
+    <!-- 5. ОЛВИН -->
     <div class="house-block" id="olvyn">
         <div class="crest-container">
             <img src="olvyn.jpg" class="crest-img" alt="Герб Дома Олвин">
         </div>
-        <div class="house-title">Дом Олвин</div>
-        <span class="house-motto">«Мы отзовёмся эхом: в вечности»</span>
-        <div class="house-tags">
-            <span class="tag">Прогрессивные</span>
-            <span class="tag">Фермеры</span>
-            <span class="tag">Медики</span>
-            <span class="tag">Домоседы</span>
-        </div>
+        <div class="house-title">5. Герцоги Олвина (Olvyn)</div>
+        <span class="house-motto">«Мы отзовемся эхом: в вечности»</span>
+        
         <div class="house-text">
-            <p>Герцоги Олвин — консерваторы и интриганы. Их земли лежат в тени старых крепостей, где память о былых обидах хранится дольше, чем память о победах. Они высокомерны, элегантны и опасны.</p>
-            <p>Олвин ненавидят королевскую семью. Они считают, что корона украла их власть, их земли, их будущее. Они втайне плетут интриги, пытаясь обвинить корону в своих проблемах.</p>
-            <p><strong>В совете:</strong> Олвин — противники короны. Они будут голосовать за всё, что ослабляет центральную власть. Их цель — мятеж, скрытый за фасадом верности.</p>
-        </div>
-        <div class="house-quote">
-            «Мы не строим. Мы помним. И мы не прощаем».
+            <p>Вы принимаете новое, что кажется нарушает законы природы, как потенциальные ресурсы для улучшения общества. Вы твердо верите, что бедность, голод, болезни искореняются за счёт изобретений и знаний.</p>
         </div>
         <div class="back-to-top"><a href="#top">↑ Наверх</a></div>
     </div>
 
-    <!-- ДУАЛАК -->
-    <div class="house-block" id="dualuk">
-        <div class="crest-container">
-            <img src="dualuk.jpg" class="crest-img" alt="Герб Дома Дуалак">
-        </div>
-        <div class="house-title">Дом Дуалак</div>
-        <span class="house-motto">«Почувствуй наш укол»</span>
-        <div class="house-tags">
-            <span class="tag">Независимые (в мечтах)</span>
-            <span class="tag">Зависимые (на деле)</span>
-        </div>
-        <div class="house-text">
-            <p>Маркизы Дуалак — мстительные интриганы. Их земли были присоединены к Анкисту после предательского заговора — так, по крайней мере, они верят. Они притворяются бедными, чтобы получить помощь от короны, но за этим скрывается ненависть.</p>
-            <p>Их цель — проклясть королевскую династию. Не убить. Проклясть. Чтобы корона страдала так же, как страдали они.</p>
-            <p><strong>В совете:</strong> Дуалак — хаос. Они будут голосовать за всё, что подрывает стабильность. Их нельзя купить — только обмануть.</p>
-        </div>
-        <div class="house-quote">
-            «Мы были свободны. Они отняли нашу свободу. Мы вернём её — любой ценой».
-        </div>
-        <div class="back-to-top"><a href="#top">↑ Наверх</a></div>
-    </div>
-
-    <!-- ТАЙРИЛЛ -->
-    <div class="house-block" id="tiryll">
-        <div class="crest-container">
-            <img src="tiryll.jpg" class="crest-img" alt="Герб Дома Тайрилл">
-        </div>
-        <div class="house-title">Дом Тайрилл</div>
-        <span class="house-motto">«Нет такой крови, как наша»</span>
-        <div class="house-tags">
-            <span class="tag">Консервативные</span>
-            <span class="tag">Высокомерные</span>
-            <span class="tag">Дворяне</span>
-        </div>
-        <div class="house-text">
-            <p>Маркизы Тайрилл — ксенофобы и снобы. Они гордятся своей «чистой кровью» и презирают всех, кто не принадлежит к их кругу. Они держат бедняков в невежестве, чтобы те не могли подняться.</p>
-            <p>Их цель — подчинить маргиналов. Они хотят сохранить Анкист «чистым», изолированным от чужаков и их идей.</p>
-            <p><strong>В совете:</strong> Тайрилл будут поддерживать изоляцию и консерватизм. Они — противники прогресса и открытости.</p>
-        </div>
-        <div class="house-quote">
-            «Мы — соль земли. Остальные — грязь под нашими ногтями».
-        </div>
-        <div class="back-to-top"><a href="#top">↑ Наверх</a></div>
-    </div>
-
-    <!-- НАТАР -->
-    <div class="house-block" id="natar">
-        <div class="crest-container">
-            <img src="natar.jpg" class="crest-img" alt="Герб Дома Натар">
-        </div>
-        <div class="house-title">Дом Натар</div>
-        <span class="house-motto">«Неведение — благо»</span>
-        <div class="house-tags">
-            <span class="tag">Религиозные</span>
-            <span class="tag">Фанатики</span>
-        </div>
-        <div class="house-text">
-            <p>Герцоги Натар — религиозные фанатики. Они преданы Культу Матери до фанатизма. Их земли усеяны древними руинами, которые они уничтожают, считая, что знание до Матери — нечисто.</p>
-            <p>Их цель — уничтожить древнее еретическое знание. Они верят, что только вера может спасти мир. Наука — это путь к гибели.</p>
-            <p><strong>В совете:</strong> Натар будут поддерживать всё, что укрепляет веру и моральный дух. Но они — враги науки и прогресса.</p>
-        </div>
-        <div class="house-quote">
-            «Матерь дала нам веру. Всё остальное — ересь».
-        </div>
-        <div class="back-to-top"><a href="#top">↑ Наверх</a></div>
-    </div>
-
-    <!-- КРЭНН -->
-    <div class="house-block" id="crann">
-        <div class="crest-container">
-            <img src="crann.jpg" class="crest-img" alt="Герб Дома Крэнн">
-        </div>
-        <div class="house-title">Дом Крэнн</div>
-        <span class="house-motto">«Спокойствие в смерти»</span>
-        <div class="house-tags">
-            <span class="tag">Кровожадные</span>
-            <span class="tag">Южные защитники</span>
-            <span class="tag">Вина</span>
-        </div>
-        <div class="house-text">
-            <p>Маркизы Крэнн — кровожадные защитники. Их земли — это виноградники, увитые колючими розами, и крепости, стоящие на пути варваров. Они грабят соседей, притворяясь разбойниками, но втайне все благодарны им за защиту.</p>
-            <p>Их цель — завоевать другое королевство. Они хотят расширить Анкист, даже если для этого придётся пролить кровь.</p>
-            <p><strong>В совете:</strong> Крэнн будут поддерживать войну и экспансию. Они — угроза стабильности, но полезны, когда нужно защитить границы.</p>
-        </div>
-        <div class="house-quote">
-            «Мы пьём вино. Мы защищаем юг. И мы не просим прощения».
-        </div>
-        <div class="back-to-top"><a href="#top">↑ Наверх</a></div>
-    </div>
-
-    <!-- ВАЙЛИО -->
-    <div class="house-block" id="wylio">
-        <div class="crest-container">
-            <img src="wylio.jpg" class="crest-img" alt="Герб Дома Вайлио">
-        </div>
-        <div class="house-title">Дом Вайлио</div>
-        <span class="house-motto">«Никогда не нарушай сделку»</span>
-        <div class="house-tags">
-            <span class="tag">Златолюбивые</span>
-            <span class="tag">Торговцы</span>
-        </div>
-        <div class="house-text">
-            <p>Маркизы Вайлио — торговцы и капиталисты. Они не полагаются на корону, считая, что только они создают богатство королевства. Их герб — чёрный петух с короной, символ гордости и независимости.</p>
-            <p>Их цель — найти способ создавать золото. Не добывать. Создавать. Алхимия? Магия? Или просто безграничная жадность?</p>
-            <p><strong>В совете:</strong> Вайлио — «дикие карты». Они продадут свой голос тому, кто предложит больше. Но их сделки нерушимы.</p>
-        </div>
-        <div class="house-quote">
-            «Золото не пахнет. Но оно открывает все двери».
-        </div>
-        <div class="back-to-top"><a href="#top">↑ Наверх</a></div>
-    </div>
-
-    <!-- АЛЛВЕД -->
+    <!-- 6. АЛЛВЕД -->
     <div class="house-block" id="allwed">
         <div class="crest-container">
             <img src="allwed.jpg" class="crest-img" alt="Герб Дома Аллвед">
         </div>
-        <div class="house-title">Дом Аллвед</div>
-        <span class="house-motto">«Жизнь дана для наслаждений»</span>
-        <div class="house-tags">
-            <span class="tag">Симонитутые</span>
-            <span class="tag">Гедонисты</span>
-        </div>
+        <div class="house-title">6. Маркизы Аллведа (Allwed)</div>
+        <span class="house-motto">«Жизнь - для наслаждений»</span>
+        
         <div class="house-text">
-            <p>Маркизы Аллвед — гедонисты и лентяи. Их земли небогаты, но они наслаждаются жизнью, хорошей едой и вином. Остальные дома смеются над ними, называя их заурядными и ленивыми.</p>
-            <p>Их цель — добиться социального равенства. Не из идеализма, а потому что они хотят, чтобы все жили так же хорошо, как они.</p>
-            <p><strong>В совете:</strong> Аллвед — популисты. Они поддержат всё, что сулит быструю выгоду. Но их лень может стоить им влияния.</p>
+            <p>Несмотря на относительную бедность вашей земли, вы наслаждаетесь жизнью, хорошей едой и превосходным вином, но ваша кажущаяся заурядности и день являются предметом частых шуток и насмешек части королевства.</p>
         </div>
-        <div class="house-quote">
-            «Мы бедны? Возможно. Но мы пьём лучшее вино в королевстве».
+        <div class="back-to-top"><a href="#top">↑ Наверх</a></div>
+    </div>
+
+    <!-- 7. ГАМАМ -->
+    <div class="house-block" id="gamam">
+        <div class="crest-container">
+            <img src="gamam.jpg" class="crest-img" alt="Герб Дома Гамам">
+        </div>
+        <div class="house-title">7. Герцоги Гамама (Gamam)</div>
+        <span class="house-motto">«Работа - эта жизнь»</span>
+        
+        <div class="house-text">
+            <p>Вы умелые торговцы и работяги. Со стороны вы кажетесь требовательными, высокомерными и привередливыми. но при этом элегантными и утонченными.</p>
+        </div>
+        <div class="back-to-top"><a href="#top">↑ Наверх</a></div>
+    </div>
+
+    <!-- 8. ДУАЛАК -->
+    <div class="house-block" id="dualuk">
+        <div class="crest-container">
+            <img src="dualuk.jpg" class="crest-img" alt="Герб Дома Дуалак">
+        </div>
+        <div class="house-title">8. Маркизы Дуалака (Dualak)</div>
+        <span class="house-motto">«Почувствуй наш укол»</span>
+        
+        <div class="house-text">
+            <p>Ваш народ убежден, что ваши земли аннексировали к Анкисту из-за предательского заговора. Вы втайне ненавидите королевскую семью и всегда пытаетесь обвинить их в своих проблемах.</p>
+        </div>
+        <div class="back-to-top"><a href="#top">↑ Наверх</a></div>
+    </div>
+
+    <!-- 9. ТАЙРИЛЛ -->
+    <div class="house-block" id="tiryll">
+        <div class="crest-container">
+            <img src="tiryll.jpg" class="crest-img" alt="Герб Дома Тайрилл">
+        </div>
+        <div class="house-title">9. Маркизы Тайрила (Tiryll)</div>
+        <span class="house-motto">«Нет такой крови, как наша»</span>
+        
+        <div class="house-text">
+            <p>Традиционно сильно консервативны и заинтересованы в том, чтобы бедняки оставались настолько несчастными и невежественными, насколько это возможно, следя за тем, чтобы было легко отличить от вашего чистого благородного происхождения.</p>
+        </div>
+        <div class="back-to-top"><a href="#top">↑ Наверх</a></div>
+    </div>
+
+    <!-- 10. ВАЙЛИО -->
+    <div class="house-block" id="wylio">
+        <div class="crest-container">
+            <img src="wylio.jpg" class="crest-img" alt="Герб Дома Вайлио">
+        </div>
+        <div class="house-title">10. Маркизы Вайлио (Wylio)</div>
+        <span class="house-motto">«Никогда не нарушай сделку»</span>
+        
+        <div class="house-text">
+            <p>Ваши люди - умелые торговцы, и вы не полагаетесь на центральную власть для решения своих проблем. Вас считают немного высокомерными, а вы думаете, что только такие люди как вы, создают богатство для всего королевства.</p>
+        </div>
+        <div class="back-to-top"><a href="#top">↑ Наверх</a></div>
+    </div>
+
+    <!-- 11. КРАНН -->
+    <div class="house-block" id="crann">
+        <div class="crest-container">
+            <img src="crann.jpg" class="crest-img" alt="Герб Дома Кранн">
+        </div>
+        <div class="house-title">11. Маркизы Кранна (Crann)</div>
+        <span class="house-motto">«Спокойствие в смерти»</span>
+        
+        <div class="house-text">
+            <p>У вас ужасная репутация кровожадных людей: люди из других герцогств и марок (приграничье) Анкиста думают, что Кранн - это договор_головорезов, но втайне благодарны, так как вы защищаете безопасность южной границы.</p>
+        </div>
+        <div class="back-to-top"><a href="#top">↑ Наверх</a></div>
+    </div>
+
+    <!-- 12. НАТАР -->
+    <div class="house-block" id="natar">
+        <div class="crest-container">
+            <img src="natar.jpg" class="crest-img" alt="Герб Дома Натар">
+        </div>
+        <div class="house-title">12. Герцоги Натара (Natar)</div>
+        <span class="house-motto">«Неведение - благо»</span>
+        
+        <div class="house-text">
+            <p>Ваши люди чрезвычайно преданны Культу Матери до фанатизма. У вас глубоко укоренившаяся нетерпимость к любым упоминаниям инородных религий или древних культов.</p>
         </div>
         <div class="back-to-top"><a href="#top">↑ Наверх</a></div>
     </div>
